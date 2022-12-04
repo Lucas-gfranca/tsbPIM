@@ -34,6 +34,7 @@ namespace tsbPIM
                 {
                     MessageBox.Show("Logado com sucesso", "Entrando...", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 menuTSB men = new menuTSB();
+                    this.Hide();
                     men.Show();
                 }
                 else
@@ -49,7 +50,13 @@ namespace tsbPIM
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             RedefinirSenha senhaNova = new RedefinirSenha();
+            this.Hide();
             senhaNova.Show();
+        }
+
+        private void panelLogin_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

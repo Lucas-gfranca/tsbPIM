@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Apresentação\Apolice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Apresentação\Apolice.Designer.cs">
-      <DependentUpon>Apolice.cs</DependentUpon>
-    </Compile>
     <Compile Include="Apresentação\Assistencia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,12 +57,6 @@
     </Compile>
     <Compile Include="Apresentação\CadastrarCliente.Designer.cs">
       <DependentUpon>CadastrarCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Apresentação\Desempenho.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Apresentação\Desempenho.Designer.cs">
-      <DependentUpon>Desempenho.cs</DependentUpon>
     </Compile>
     <Compile Include="Apresentação\Funcionario.cs">
       <SubType>Form</SubType>
@@ -94,11 +82,23 @@
     <Compile Include="Apresentação\RedefinirSenha.Designer.cs">
       <DependentUpon>RedefinirSenha.cs</DependentUpon>
     </Compile>
-    <Compile Include="Apresentação\Suporte.cs">
+    <Compile Include="Apresentação\TelaBuscaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Apresentação\Suporte.Designer.cs">
-      <DependentUpon>Suporte.cs</DependentUpon>
+    <Compile Include="Apresentação\TelaBuscaCliente.Designer.cs">
+      <DependentUpon>TelaBuscaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentação\TelaBuscaFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\TelaBuscaFunc.Designer.cs">
+      <DependentUpon>TelaBuscaFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentação\TelaBuscaSeguradora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\TelaBuscaSeguradora.Designer.cs">
+      <DependentUpon>TelaBuscaSeguradora.cs</DependentUpon>
     </Compile>
     <Compile Include="Apresentação\Vendas.cs">
       <SubType>Form</SubType>
@@ -108,9 +108,43 @@
     </Compile>
     <Compile Include="DAO\Conexao.cs" />
     <Compile Include="DAO\LoginDaoComandos.cs" />
+    <Compile Include="Modelo\ClienteModel.cs" />
+    <Compile Include="Modelo\ClientesDropDown.cs" />
     <Compile Include="Modelo\Controle.cs" />
+    <Compile Include="Modelo\DropDown.cs" />
+    <Compile Include="Modelo\FuncionarioModel.cs" />
+    <Compile Include="Modelo\SeguradoraDropDown.cs" />
+    <Compile Include="Modelo\SeguradoraModel.cs" />
+    <Compile Include="PIM4DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PIM4DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PIM4DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PIM4DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PIM4DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PIM4DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PIM4DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PIM4DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PIM4DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PIM4DataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Apresentação\Assistencia.resx">
+      <DependentUpon>Assistencia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Apresentação\CadastrarCliente.resx">
       <DependentUpon>CadastrarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +160,18 @@
     <EmbeddedResource Include="Apresentação\RedefinirSenha.resx">
       <DependentUpon>RedefinirSenha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\TelaBuscaCliente.resx">
+      <DependentUpon>TelaBuscaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\TelaBuscaFunc.resx">
+      <DependentUpon>TelaBuscaFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\TelaBuscaSeguradora.resx">
+      <DependentUpon>TelaBuscaSeguradora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\Vendas.resx">
+      <DependentUpon>Vendas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -135,6 +181,61 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="PIM4DataSet.xsc">
+      <DependentUpon>PIM4DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PIM4DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PIM4DataSet.xss">
+      <DependentUpon>PIM4DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet1.xsc">
+      <DependentUpon>PIM4DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PIM4DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PIM4DataSet1.xss">
+      <DependentUpon>PIM4DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet2.xsc">
+      <DependentUpon>PIM4DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PIM4DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PIM4DataSet2.xss">
+      <DependentUpon>PIM4DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet3.xsc">
+      <DependentUpon>PIM4DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PIM4DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PIM4DataSet3.xss">
+      <DependentUpon>PIM4DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet4.xsc">
+      <DependentUpon>PIM4DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PIM4DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PIM4DataSet4.xss">
+      <DependentUpon>PIM4DataSet4.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

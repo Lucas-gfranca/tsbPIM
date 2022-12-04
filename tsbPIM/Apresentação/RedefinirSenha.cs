@@ -20,6 +20,7 @@ namespace tsbPIM.Apresentação
         private void bntVoltar_Click(object sender, EventArgs e)
         {
             Login login = new Login();
+            this.Hide();
             login.Show();
         }
     }

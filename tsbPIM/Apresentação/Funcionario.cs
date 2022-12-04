@@ -74,7 +74,7 @@ namespace tsbPIM.Apresentação
 
 
             LoginDaoComandos ldco = new LoginDaoComandos();
-            ldco.cadFunc( int.Parse(txtFuncId.Text), txtFuncNome.Text, txtCargo.Text, mktFuncFone.Text, cbFuncSexo.Text, mktFuncCpf.Text, cbFuncEstCiv.Text, mktFuncRg.Text, mktFuncCep.Text, txtFuncEmail.Text);
+            ldco.cadFunc( int.Parse(txtFuncId.Text), txtFuncNome.Text, txtCargo.Text, Convert.ToDateTime(mktFuncDataNasc.Text), mktFuncFone.Text, cbFuncSexo.Text, mktFuncCpf.Text, cbFuncEstCiv.Text, mktFuncRg.Text, mktFuncCep.Text, txtFuncEmail.Text);
         }
 
         private void panelLogo_Paint(object sender, PaintEventArgs e)
@@ -96,7 +96,27 @@ namespace tsbPIM.Apresentação
         private void btnVoltarMenu_Click(object sender, EventArgs e)
         {
             menuTSB menu = new menuTSB();
+            this.Hide();
             menu.Show();
+        }
+
+        private void btnExcluirFuncionario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscarFuncionario_Click(object sender, EventArgs e)
+        {
+            TelaBuscaFunc buscaFunc = new TelaBuscaFunc();
+            this.Hide();
+            buscaFunc.Show();
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.Show();
         }
     }
 }
