@@ -14,7 +14,7 @@ namespace tsbPIM.DAL
     
             public Conexao()
             {
-            con.ConnectionString = @"Data Source=DESKTOP-86E969S\SQLEXPRESS;Initial Catalog=PIM4;Integrated Security=True";
+            con.ConnectionString = @"Data Source=EVERY253;Initial Catalog=PIM4;Integrated Security=True";
             }
         public SqlConnection conectar()
         {

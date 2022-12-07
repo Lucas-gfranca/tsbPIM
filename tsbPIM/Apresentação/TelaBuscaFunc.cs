@@ -21,14 +21,12 @@ namespace tsbPIM.Apresentação
 
         private void TelaBuscaFunc_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'pIM4DataSet3.CadFunc'. Você pode movê-la ou removê-la conforme necessário.
-            this.cadFuncTableAdapter1.Fill(this.pIM4DataSet3.CadFunc);
-            // TODO: esta linha de código carrega dados na tabela 'pIM4DataSet2.CadFunc'. Você pode movê-la ou removê-la conforme necessário.
-            this.cadFuncTableAdapter.Fill(this.pIM4DataSet2.CadFunc);
+            // TODO: esta linha de código carrega dados na tabela 'pIM4DataSet6.CadFunc'. Você pode movê-la ou removê-la conforme necessário.
+            this.cadFuncTableAdapter3.Fill(this.pIM4DataSet6.CadFunc);
 
         }
 
-       
+
 
         private void dgvFuncionario_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -206,6 +204,19 @@ namespace tsbPIM.Apresentação
 
         private void btnBuscarCliente_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.cadFuncTableAdapter3.FillBy(this.pIM4DataSet6.CadFunc);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
 
         }
     }

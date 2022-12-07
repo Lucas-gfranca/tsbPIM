@@ -20,10 +20,8 @@ namespace tsbPIM.Apresentação
 
         private void TelaBusca_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'pIM4DataSet1.dadosCliente'. Você pode movê-la ou removê-la conforme necessário.
-            this.dadosClienteTableAdapter1.Fill(this.pIM4DataSet1.dadosCliente);
-            // TODO: esta linha de código carrega dados na tabela 'pIM4DataSet.dadosCliente'. Você pode movê-la ou removê-la conforme necessário.
-            this.dadosClienteTableAdapter.Fill(this.pIM4DataSet.dadosCliente);
+            // TODO: esta linha de código carrega dados na tabela 'pIM4DataSet10.dadosCliente'. Você pode movê-la ou removê-la conforme necessário.
+            this.dadosClienteTableAdapter3.Fill(this.pIM4DataSet10.dadosCliente);
 
         }
         private void pesquisaClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)

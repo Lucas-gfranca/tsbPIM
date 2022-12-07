@@ -20,17 +20,13 @@ namespace tsbPIM.Apresentação
 
         private void TelaBuscaSeguradora_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'pIM4DataSet4.seguradora'. Você pode movê-la ou removê-la conforme necessário.
-            this.seguradoraTableAdapter.Fill(this.pIM4DataSet4.seguradora);
+            // TODO: esta linha de código carrega dados na tabela 'pIM4DataSet8.seguradora'. Você pode movê-la ou removê-la conforme necessário.
+            this.seguradoraTableAdapter2.Fill(this.pIM4DataSet8.seguradora);
+
 
         }
 
         private void dgvFuncionario_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dgvFuncionario_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow linha = dgvFuncionario.Rows[e.RowIndex];
             txtBuscaSegId.Text = linha.Cells[0].Value.ToString();
@@ -45,6 +41,11 @@ namespace tsbPIM.Apresentação
             txtBuscaSegCidade.Text = linha.Cells[9].Value.ToString();
             cbBuscaUfSeguradora.Text = linha.Cells[10].Value.ToString();
             txtBuscaSegComp.Text = linha.Cells[11].Value.ToString();
+        }
+
+        private void dgvFuncionario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
         }
 
         private void btnEditar_Click(object sender, EventArgs e)

@@ -125,6 +125,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PIM4DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PIM4DataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PIM4DataSet10.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PIM4DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -139,6 +144,31 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PIM4DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PIM4DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PIM4DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PIM4DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PIM4DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PIM4DataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PIM4DataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PIM4DataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PIM4DataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PIM4DataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PIM4DataSet9.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -203,6 +233,17 @@
     <None Include="PIM4DataSet1.xss">
       <DependentUpon>PIM4DataSet1.xsd</DependentUpon>
     </None>
+    <None Include="PIM4DataSet10.xsc">
+      <DependentUpon>PIM4DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PIM4DataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PIM4DataSet10.xss">
+      <DependentUpon>PIM4DataSet10.xsd</DependentUpon>
+    </None>
     <None Include="PIM4DataSet2.xsc">
       <DependentUpon>PIM4DataSet2.xsd</DependentUpon>
     </None>
@@ -235,6 +276,61 @@
     </None>
     <None Include="PIM4DataSet4.xss">
       <DependentUpon>PIM4DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet5.xsc">
+      <DependentUpon>PIM4DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PIM4DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PIM4DataSet5.xss">
+      <DependentUpon>PIM4DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet6.xsc">
+      <DependentUpon>PIM4DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PIM4DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PIM4DataSet6.xss">
+      <DependentUpon>PIM4DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet7.xsc">
+      <DependentUpon>PIM4DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PIM4DataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PIM4DataSet7.xss">
+      <DependentUpon>PIM4DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet8.xsc">
+      <DependentUpon>PIM4DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PIM4DataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PIM4DataSet8.xss">
+      <DependentUpon>PIM4DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet9.xsc">
+      <DependentUpon>PIM4DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PIM4DataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PIM4DataSet9.xss">
+      <DependentUpon>PIM4DataSet9.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

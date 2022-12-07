@@ -20,6 +20,7 @@ namespace tsbPIM.DAL
         Conexao con = new Conexao();
         SqlDataReader dr;
 
+
         public bool verificarLogin(String emailAdm, String senhaAdm)
         {
             cmd.Connection = con.conectar();
