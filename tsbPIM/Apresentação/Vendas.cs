@@ -46,8 +46,17 @@ namespace tsbPIM.Apresentação
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrEmpty(cbPlanos.Text) || String.IsNullOrEmpty(mktDataVenda.Text))
+            {
+                MessageBox.Show("Campos obrigatórios não preenchidos, verifique e tente novamente!!!");
+                return;
+            }
+            var funcionario = lstDropDown.Find((fnc) => fnc.Name == cbDropFuncionario.Text);
+            var seguradora = lstSeguradoraDropDown.Find((sgr) => sgr.Name == cbDropServicos.Text);
+            var cliente = lstClientesDropDown.Find((clt) => clt.Name == cbDropCLientes.Text);
+
             LoginDaoComandos ldco = new LoginDaoComandos();
-            ldco.inserirVenda(int.Parse(txtVendaId.Text), cbPlanos.Text, Convert.ToDateTime(mktDataVenda.Text), cbDropCLientes.Text, cbDropServicos.Text, cbDropFuncionario.Text);
+            ldco.inserirVenda(cbPlanos.Text, Convert.ToDateTime(mktDataVenda.Text), cliente.Id, funcionario.Id, seguradora.Id);
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -62,6 +71,13 @@ namespace tsbPIM.Apresentação
             menuTSB menu = new menuTSB();
             this.Hide();
             menu.Show();
+        }
+
+        private void btnBuscarSeguradora_Click(object sender, EventArgs e)
+        {
+            TelaBuscaVenda buscaVendas = new TelaBuscaVenda();
+            this.Hide();
+            buscaVendas.Show();
         }
     }
 }

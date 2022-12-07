@@ -56,7 +56,9 @@
             this.lblEstado = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.pesquisaClientes = new System.Windows.Forms.DataGridView();
+            this.idClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientePj = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.nomeClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.foneCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rgCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,6 +77,8 @@
             this.uf = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bairro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.complemento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dadosClienteBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.pIM4DataSet10 = new tsbPIM.PIM4DataSet10();
             this.label5 = new System.Windows.Forms.Label();
             this.txtBuscaId = new System.Windows.Forms.TextBox();
             this.cbkBuscaDoenca = new System.Windows.Forms.CheckBox();
@@ -98,8 +102,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnEditarFuncionario = new System.Windows.Forms.Button();
             this.cbBuscaClienteSexo = new System.Windows.Forms.TextBox();
-            this.idClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dadosClienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pIM4DataSet1 = new tsbPIM.PIM4DataSet1();
             this.dadosClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -109,11 +111,11 @@
             this.pIM4DataSet9 = new tsbPIM.PIM4DataSet9();
             this.dadosClienteBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.dadosClienteTableAdapter2 = new tsbPIM.PIM4DataSet9TableAdapters.dadosClienteTableAdapter();
-            this.pIM4DataSet10 = new tsbPIM.PIM4DataSet10();
-            this.dadosClienteBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.dadosClienteTableAdapter3 = new tsbPIM.PIM4DataSet10TableAdapters.dadosClienteTableAdapter();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pesquisaClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dadosClienteBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet10)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dadosClienteBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet1)).BeginInit();
@@ -121,8 +123,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dadosClienteBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dadosClienteBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLogo
@@ -131,10 +131,11 @@
             this.panelLogo.Controls.Add(this.btnSair);
             this.panelLogo.Controls.Add(this.lblMenu);
             this.panelLogo.Controls.Add(this.lblTSB);
-            this.panelLogo.Location = new System.Drawing.Point(-1, 1);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(1922, 171);
+            this.panelLogo.Size = new System.Drawing.Size(1924, 171);
             this.panelLogo.TabIndex = 30;
             // 
             // btnSair
@@ -181,7 +182,7 @@
             // 
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Location = new System.Drawing.Point(1397, 208);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(192, 62);
             this.btnEditar.TabIndex = 35;
@@ -193,7 +194,7 @@
             // 
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.Location = new System.Drawing.Point(1619, 208);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(192, 62);
             this.btnExcluir.TabIndex = 36;
@@ -205,7 +206,7 @@
             // 
             this.txtBuscaNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaNome.Location = new System.Drawing.Point(456, 306);
-            this.txtBuscaNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaNome.Name = "txtBuscaNome";
             this.txtBuscaNome.Size = new System.Drawing.Size(233, 37);
             this.txtBuscaNome.TabIndex = 37;
@@ -214,7 +215,7 @@
             // 
             this.txtBuscaEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaEmail.Location = new System.Drawing.Point(456, 383);
-            this.txtBuscaEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaEmail.Name = "txtBuscaEmail";
             this.txtBuscaEmail.Size = new System.Drawing.Size(251, 37);
             this.txtBuscaEmail.TabIndex = 38;
@@ -223,7 +224,7 @@
             // 
             this.txtBuscaFone.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaFone.Location = new System.Drawing.Point(455, 454);
-            this.txtBuscaFone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaFone.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaFone.Name = "txtBuscaFone";
             this.txtBuscaFone.Size = new System.Drawing.Size(187, 37);
             this.txtBuscaFone.TabIndex = 39;
@@ -232,7 +233,7 @@
             // 
             this.txtBuscaComplemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaComplemento.Location = new System.Drawing.Point(984, 389);
-            this.txtBuscaComplemento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaComplemento.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaComplemento.Name = "txtBuscaComplemento";
             this.txtBuscaComplemento.Size = new System.Drawing.Size(261, 37);
             this.txtBuscaComplemento.TabIndex = 41;
@@ -241,7 +242,7 @@
             // 
             this.txtBuscaRua.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaRua.Location = new System.Drawing.Point(599, 231);
-            this.txtBuscaRua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaRua.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaRua.Name = "txtBuscaRua";
             this.txtBuscaRua.Size = new System.Drawing.Size(292, 37);
             this.txtBuscaRua.TabIndex = 42;
@@ -290,7 +291,7 @@
             "Viuvo(a)",
             "Divorciado(a)"});
             this.cbBuscaEstCiv.Location = new System.Drawing.Point(680, 457);
-            this.cbBuscaEstCiv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbBuscaEstCiv.Margin = new System.Windows.Forms.Padding(4);
             this.cbBuscaEstCiv.Name = "cbBuscaEstCiv";
             this.cbBuscaEstCiv.Size = new System.Drawing.Size(169, 38);
             this.cbBuscaEstCiv.TabIndex = 48;
@@ -346,7 +347,7 @@
             // 
             this.txtBuscaCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaCidade.Location = new System.Drawing.Point(847, 306);
-            this.txtBuscaCidade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaCidade.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaCidade.Name = "txtBuscaCidade";
             this.txtBuscaCidade.Size = new System.Drawing.Size(188, 37);
             this.txtBuscaCidade.TabIndex = 52;
@@ -355,7 +356,7 @@
             // 
             this.txtBuscaBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaBairro.Location = new System.Drawing.Point(1073, 308);
-            this.txtBuscaBairro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaBairro.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaBairro.Name = "txtBuscaBairro";
             this.txtBuscaBairro.Size = new System.Drawing.Size(159, 37);
             this.txtBuscaBairro.TabIndex = 51;
@@ -375,7 +376,7 @@
             // 
             this.txtBuscaNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaNumero.Location = new System.Drawing.Point(719, 308);
-            this.txtBuscaNumero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaNumero.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaNumero.Name = "txtBuscaNumero";
             this.txtBuscaNumero.Size = new System.Drawing.Size(92, 37);
             this.txtBuscaNumero.TabIndex = 57;
@@ -413,7 +414,7 @@
             "SE",
             "TO"});
             this.cbBuscaUf.Location = new System.Drawing.Point(932, 234);
-            this.cbBuscaUf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbBuscaUf.Margin = new System.Windows.Forms.Padding(4);
             this.cbBuscaUf.Name = "cbBuscaUf";
             this.cbBuscaUf.Size = new System.Drawing.Size(65, 38);
             this.cbBuscaUf.TabIndex = 62;
@@ -469,13 +470,21 @@
             this.complemento});
             this.pesquisaClientes.DataSource = this.dadosClienteBindingSource3;
             this.pesquisaClientes.Location = new System.Drawing.Point(456, 555);
-            this.pesquisaClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pesquisaClientes.Margin = new System.Windows.Forms.Padding(4);
             this.pesquisaClientes.Name = "pesquisaClientes";
             this.pesquisaClientes.RowHeadersWidth = 51;
             this.pesquisaClientes.Size = new System.Drawing.Size(1331, 426);
             this.pesquisaClientes.TabIndex = 65;
             this.pesquisaClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.pesquisaClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.pesquisaClientes_CellDoubleClick);
+            // 
+            // idClienteDataGridViewTextBoxColumn
+            // 
+            this.idClienteDataGridViewTextBoxColumn.DataPropertyName = "idCliente";
+            this.idClienteDataGridViewTextBoxColumn.HeaderText = "idCliente";
+            this.idClienteDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idClienteDataGridViewTextBoxColumn.Name = "idClienteDataGridViewTextBoxColumn";
+            this.idClienteDataGridViewTextBoxColumn.Width = 125;
             // 
             // clientePj
             // 
@@ -484,6 +493,14 @@
             this.clientePj.MinimumWidth = 6;
             this.clientePj.Name = "clientePj";
             this.clientePj.Width = 125;
+            // 
+            // nomeClienteDataGridViewTextBoxColumn
+            // 
+            this.nomeClienteDataGridViewTextBoxColumn.DataPropertyName = "nomeCliente";
+            this.nomeClienteDataGridViewTextBoxColumn.HeaderText = "nomeCliente";
+            this.nomeClienteDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nomeClienteDataGridViewTextBoxColumn.Name = "nomeClienteDataGridViewTextBoxColumn";
+            this.nomeClienteDataGridViewTextBoxColumn.Width = 125;
             // 
             // foneCliente
             // 
@@ -629,6 +646,16 @@
             this.complemento.Name = "complemento";
             this.complemento.Width = 125;
             // 
+            // dadosClienteBindingSource3
+            // 
+            this.dadosClienteBindingSource3.DataMember = "dadosCliente";
+            this.dadosClienteBindingSource3.DataSource = this.pIM4DataSet10;
+            // 
+            // pIM4DataSet10
+            // 
+            this.pIM4DataSet10.DataSetName = "PIM4DataSet10";
+            this.pIM4DataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -645,7 +672,7 @@
             // 
             this.txtBuscaId.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaId.Location = new System.Drawing.Point(456, 231);
-            this.txtBuscaId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaId.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaId.Name = "txtBuscaId";
             this.txtBuscaId.ReadOnly = true;
             this.txtBuscaId.Size = new System.Drawing.Size(88, 37);
@@ -656,7 +683,7 @@
             this.cbkBuscaDoenca.AutoSize = true;
             this.cbkBuscaDoenca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbkBuscaDoenca.Location = new System.Drawing.Point(1377, 439);
-            this.cbkBuscaDoenca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbkBuscaDoenca.Margin = new System.Windows.Forms.Padding(4);
             this.cbkBuscaDoenca.Name = "cbkBuscaDoenca";
             this.cbkBuscaDoenca.Size = new System.Drawing.Size(239, 29);
             this.cbkBuscaDoenca.TabIndex = 70;
@@ -668,7 +695,7 @@
             this.cbkBuscaCirurgia.AutoSize = true;
             this.cbkBuscaCirurgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbkBuscaCirurgia.Location = new System.Drawing.Point(1377, 411);
-            this.cbkBuscaCirurgia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbkBuscaCirurgia.Margin = new System.Windows.Forms.Padding(4);
             this.cbkBuscaCirurgia.Name = "cbkBuscaCirurgia";
             this.cbkBuscaCirurgia.Size = new System.Drawing.Size(133, 29);
             this.cbkBuscaCirurgia.TabIndex = 69;
@@ -680,7 +707,7 @@
             this.cbkBuscaFumante.AutoSize = true;
             this.cbkBuscaFumante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbkBuscaFumante.Location = new System.Drawing.Point(1377, 383);
-            this.cbkBuscaFumante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbkBuscaFumante.Margin = new System.Windows.Forms.Padding(4);
             this.cbkBuscaFumante.Name = "cbkBuscaFumante";
             this.cbkBuscaFumante.Size = new System.Drawing.Size(127, 29);
             this.cbkBuscaFumante.TabIndex = 68;
@@ -691,7 +718,7 @@
             // 
             this.mktBuscaClienteDataNasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mktBuscaClienteDataNasc.Location = new System.Drawing.Point(892, 460);
-            this.mktBuscaClienteDataNasc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mktBuscaClienteDataNasc.Margin = new System.Windows.Forms.Padding(4);
             this.mktBuscaClienteDataNasc.Mask = "00/00/0000";
             this.mktBuscaClienteDataNasc.Name = "mktBuscaClienteDataNasc";
             this.mktBuscaClienteDataNasc.ReadOnly = true;
@@ -703,7 +730,7 @@
             // 
             this.mktBuscaClienteCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mktBuscaClienteCpf.Location = new System.Drawing.Point(755, 384);
-            this.mktBuscaClienteCpf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mktBuscaClienteCpf.Margin = new System.Windows.Forms.Padding(4);
             this.mktBuscaClienteCpf.Mask = "000000000-00";
             this.mktBuscaClienteCpf.Name = "mktBuscaClienteCpf";
             this.mktBuscaClienteCpf.ReadOnly = true;
@@ -736,7 +763,7 @@
             // 
             this.mktBuscaClienteRg.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mktBuscaClienteRg.Location = new System.Drawing.Point(1073, 460);
-            this.mktBuscaClienteRg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mktBuscaClienteRg.Margin = new System.Windows.Forms.Padding(4);
             this.mktBuscaClienteRg.Mask = "00000000-0";
             this.mktBuscaClienteRg.Name = "mktBuscaClienteRg";
             this.mktBuscaClienteRg.ReadOnly = true;
@@ -759,7 +786,7 @@
             this.ckbBuscaClientePj.AutoSize = true;
             this.ckbBuscaClientePj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbBuscaClientePj.Location = new System.Drawing.Point(1376, 468);
-            this.ckbBuscaClientePj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbBuscaClientePj.Margin = new System.Windows.Forms.Padding(4);
             this.ckbBuscaClientePj.Name = "ckbBuscaClientePj";
             this.ckbBuscaClientePj.Size = new System.Drawing.Size(133, 29);
             this.ckbBuscaClientePj.TabIndex = 77;
@@ -770,7 +797,7 @@
             // 
             this.txtBuscaPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaPeso.Location = new System.Drawing.Point(1276, 308);
-            this.txtBuscaPeso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaPeso.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaPeso.Name = "txtBuscaPeso";
             this.txtBuscaPeso.Size = new System.Drawing.Size(81, 37);
             this.txtBuscaPeso.TabIndex = 81;
@@ -791,7 +818,7 @@
             // 
             this.txtBuscaAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaAltura.Location = new System.Drawing.Point(1276, 236);
-            this.txtBuscaAltura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaAltura.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaAltura.Name = "txtBuscaAltura";
             this.txtBuscaAltura.Size = new System.Drawing.Size(81, 37);
             this.txtBuscaAltura.TabIndex = 79;
@@ -822,7 +849,7 @@
             // 
             this.btnBuscarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarCliente.Location = new System.Drawing.Point(-1, 160);
-            this.btnBuscarCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarCliente.Name = "btnBuscarCliente";
             this.btnBuscarCliente.Size = new System.Drawing.Size(296, 75);
             this.btnBuscarCliente.TabIndex = 4;
@@ -833,7 +860,7 @@
             // 
             this.btnVoltarMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltarMenu.Location = new System.Drawing.Point(-1, 400);
-            this.btnVoltarMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVoltarMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltarMenu.Name = "btnVoltarMenu";
             this.btnVoltarMenu.Size = new System.Drawing.Size(296, 75);
             this.btnVoltarMenu.TabIndex = 7;
@@ -851,7 +878,7 @@
             this.panel1.Controls.Add(this.btnBuscarCliente);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(-1, 174);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(295, 880);
             this.panel1.TabIndex = 32;
@@ -871,7 +898,7 @@
             // 
             this.btnEditarFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditarFuncionario.Location = new System.Drawing.Point(-1, 84);
-            this.btnEditarFuncionario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditarFuncionario.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditarFuncionario.Name = "btnEditarFuncionario";
             this.btnEditarFuncionario.Size = new System.Drawing.Size(296, 75);
             this.btnEditarFuncionario.TabIndex = 8;
@@ -883,26 +910,10 @@
             // 
             this.cbBuscaClienteSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbBuscaClienteSexo.Location = new System.Drawing.Point(1037, 236);
-            this.cbBuscaClienteSexo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbBuscaClienteSexo.Margin = new System.Windows.Forms.Padding(4);
             this.cbBuscaClienteSexo.Name = "cbBuscaClienteSexo";
             this.cbBuscaClienteSexo.Size = new System.Drawing.Size(187, 37);
             this.cbBuscaClienteSexo.TabIndex = 84;
-            // 
-            // idClienteDataGridViewTextBoxColumn
-            // 
-            this.idClienteDataGridViewTextBoxColumn.DataPropertyName = "idCliente";
-            this.idClienteDataGridViewTextBoxColumn.HeaderText = "idCliente";
-            this.idClienteDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idClienteDataGridViewTextBoxColumn.Name = "idClienteDataGridViewTextBoxColumn";
-            this.idClienteDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nomeClienteDataGridViewTextBoxColumn
-            // 
-            this.nomeClienteDataGridViewTextBoxColumn.DataPropertyName = "nomeCliente";
-            this.nomeClienteDataGridViewTextBoxColumn.HeaderText = "nomeCliente";
-            this.nomeClienteDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nomeClienteDataGridViewTextBoxColumn.Name = "nomeClienteDataGridViewTextBoxColumn";
-            this.nomeClienteDataGridViewTextBoxColumn.Width = 125;
             // 
             // dadosClienteBindingSource1
             // 
@@ -945,16 +956,6 @@
             // dadosClienteTableAdapter2
             // 
             this.dadosClienteTableAdapter2.ClearBeforeFill = true;
-            // 
-            // pIM4DataSet10
-            // 
-            this.pIM4DataSet10.DataSetName = "PIM4DataSet10";
-            this.pIM4DataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dadosClienteBindingSource3
-            // 
-            this.dadosClienteBindingSource3.DataMember = "dadosCliente";
-            this.dadosClienteBindingSource3.DataSource = this.pIM4DataSet10;
             // 
             // dadosClienteTableAdapter3
             // 
@@ -1008,14 +1009,17 @@
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.panelLogo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaBuscaCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "TelaBusca";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TelaBusca_Load);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pesquisaClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dadosClienteBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet10)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dadosClienteBindingSource1)).EndInit();
@@ -1024,8 +1028,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dadosClienteBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dadosClienteBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

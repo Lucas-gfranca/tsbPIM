@@ -104,9 +104,10 @@
             this.panelFuncionario.Controls.Add(this.lblNomeFunc);
             this.panelFuncionario.Controls.Add(this.lblCnpj);
             this.panelFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelFuncionario.Location = new System.Drawing.Point(531, 141);
+            this.panelFuncionario.Location = new System.Drawing.Point(708, 174);
+            this.panelFuncionario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelFuncionario.Name = "panelFuncionario";
-            this.panelFuncionario.Size = new System.Drawing.Size(457, 607);
+            this.panelFuncionario.Size = new System.Drawing.Size(609, 747);
             this.panelFuncionario.TabIndex = 31;
             // 
             // cbTipoServico
@@ -118,18 +119,20 @@
             "Seguro de vida",
             "Médico",
             "Financeiro"});
-            this.cbTipoServico.Location = new System.Drawing.Point(210, 72);
+            this.cbTipoServico.Location = new System.Drawing.Point(280, 89);
+            this.cbTipoServico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbTipoServico.Name = "cbTipoServico";
-            this.cbTipoServico.Size = new System.Drawing.Size(138, 33);
+            this.cbTipoServico.Size = new System.Drawing.Size(183, 38);
             this.cbTipoServico.TabIndex = 85;
             // 
             // lblTipoServico
             // 
             this.lblTipoServico.AutoSize = true;
             this.lblTipoServico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoServico.Location = new System.Drawing.Point(206, 53);
+            this.lblTipoServico.Location = new System.Drawing.Point(275, 65);
+            this.lblTipoServico.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipoServico.Name = "lblTipoServico";
-            this.lblTipoServico.Size = new System.Drawing.Size(114, 20);
+            this.lblTipoServico.Size = new System.Drawing.Size(145, 25);
             this.lblTipoServico.TabIndex = 86;
             this.lblTipoServico.Text = "Tipo de serviço";
             // 
@@ -137,9 +140,10 @@
             // 
             this.bntCancelar.BackColor = System.Drawing.Color.Red;
             this.bntCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bntCancelar.Location = new System.Drawing.Point(260, 519);
+            this.bntCancelar.Location = new System.Drawing.Point(347, 639);
+            this.bntCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bntCancelar.Name = "bntCancelar";
-            this.bntCancelar.Size = new System.Drawing.Size(149, 65);
+            this.bntCancelar.Size = new System.Drawing.Size(199, 80);
             this.bntCancelar.TabIndex = 84;
             this.bntCancelar.Text = "Cancelar";
             this.bntCancelar.UseVisualStyleBackColor = false;
@@ -148,9 +152,10 @@
             // 
             this.btnCadastrarSeguradora.BackColor = System.Drawing.Color.LimeGreen;
             this.btnCadastrarSeguradora.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCadastrarSeguradora.Location = new System.Drawing.Point(45, 519);
+            this.btnCadastrarSeguradora.Location = new System.Drawing.Point(60, 639);
+            this.btnCadastrarSeguradora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCadastrarSeguradora.Name = "btnCadastrarSeguradora";
-            this.btnCadastrarSeguradora.Size = new System.Drawing.Size(149, 65);
+            this.btnCadastrarSeguradora.Size = new System.Drawing.Size(199, 80);
             this.btnCadastrarSeguradora.TabIndex = 83;
             this.btnCadastrarSeguradora.Text = "Cadastrar";
             this.btnCadastrarSeguradora.UseVisualStyleBackColor = false;
@@ -159,81 +164,90 @@
             // txtComplementoSeguradora
             // 
             this.txtComplementoSeguradora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtComplementoSeguradora.Location = new System.Drawing.Point(21, 430);
+            this.txtComplementoSeguradora.Location = new System.Drawing.Point(28, 529);
+            this.txtComplementoSeguradora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtComplementoSeguradora.Name = "txtComplementoSeguradora";
-            this.txtComplementoSeguradora.Size = new System.Drawing.Size(263, 31);
+            this.txtComplementoSeguradora.Size = new System.Drawing.Size(349, 37);
             this.txtComplementoSeguradora.TabIndex = 82;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(20, 407);
+            this.label6.Location = new System.Drawing.Point(27, 501);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 20);
+            this.label6.Size = new System.Drawing.Size(134, 25);
             this.label6.TabIndex = 81;
             this.label6.Text = "Complemento";
             // 
             // txtNumeroSeguradora
             // 
             this.txtNumeroSeguradora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroSeguradora.Location = new System.Drawing.Point(363, 305);
+            this.txtNumeroSeguradora.Location = new System.Drawing.Point(484, 375);
+            this.txtNumeroSeguradora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNumeroSeguradora.Name = "txtNumeroSeguradora";
-            this.txtNumeroSeguradora.Size = new System.Drawing.Size(78, 31);
+            this.txtNumeroSeguradora.Size = new System.Drawing.Size(103, 37);
             this.txtNumeroSeguradora.TabIndex = 80;
             // 
             // lblNumero
             // 
             this.lblNumero.AutoSize = true;
             this.lblNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumero.Location = new System.Drawing.Point(365, 287);
+            this.lblNumero.Location = new System.Drawing.Point(487, 353);
+            this.lblNumero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(26, 20);
+            this.lblNumero.Size = new System.Drawing.Size(33, 25);
             this.lblNumero.TabIndex = 79;
             this.lblNumero.Text = "Nº";
             // 
             // txtCidadeSeguradora
             // 
             this.txtCidadeSeguradora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCidadeSeguradora.Location = new System.Drawing.Point(187, 362);
+            this.txtCidadeSeguradora.Location = new System.Drawing.Point(249, 446);
+            this.txtCidadeSeguradora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCidadeSeguradora.Name = "txtCidadeSeguradora";
-            this.txtCidadeSeguradora.Size = new System.Drawing.Size(161, 31);
+            this.txtCidadeSeguradora.Size = new System.Drawing.Size(213, 37);
             this.txtCidadeSeguradora.TabIndex = 78;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(187, 344);
+            this.label5.Location = new System.Drawing.Point(249, 423);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 20);
+            this.label5.Size = new System.Drawing.Size(75, 25);
             this.label5.TabIndex = 77;
             this.label5.Text = "Cidade";
             // 
             // txtBairroSeguradora
             // 
             this.txtBairroSeguradora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBairroSeguradora.Location = new System.Drawing.Point(21, 362);
+            this.txtBairroSeguradora.Location = new System.Drawing.Point(28, 446);
+            this.txtBairroSeguradora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBairroSeguradora.Name = "txtBairroSeguradora";
-            this.txtBairroSeguradora.Size = new System.Drawing.Size(160, 31);
+            this.txtBairroSeguradora.Size = new System.Drawing.Size(212, 37);
             this.txtBairroSeguradora.TabIndex = 76;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(20, 344);
+            this.label4.Location = new System.Drawing.Point(27, 423);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 20);
+            this.label4.Size = new System.Drawing.Size(63, 25);
             this.label4.TabIndex = 75;
             this.label4.Text = "Bairro";
             // 
             // txtRuaSeguradora
             // 
             this.txtRuaSeguradora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRuaSeguradora.Location = new System.Drawing.Point(21, 305);
+            this.txtRuaSeguradora.Location = new System.Drawing.Point(28, 375);
+            this.txtRuaSeguradora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRuaSeguradora.Name = "txtRuaSeguradora";
-            this.txtRuaSeguradora.Size = new System.Drawing.Size(309, 31);
+            this.txtRuaSeguradora.Size = new System.Drawing.Size(411, 37);
             this.txtRuaSeguradora.TabIndex = 74;
             // 
             // cbUfSeguradora
@@ -268,18 +282,20 @@
             "SP",
             "SE",
             "TO"});
-            this.cbUfSeguradora.Location = new System.Drawing.Point(362, 362);
+            this.cbUfSeguradora.Location = new System.Drawing.Point(483, 446);
+            this.cbUfSeguradora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbUfSeguradora.Name = "cbUfSeguradora";
-            this.cbUfSeguradora.Size = new System.Drawing.Size(79, 33);
+            this.cbUfSeguradora.Size = new System.Drawing.Size(104, 38);
             this.cbUfSeguradora.TabIndex = 71;
             // 
             // lblRua
             // 
             this.lblRua.AutoSize = true;
             this.lblRua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRua.Location = new System.Drawing.Point(20, 287);
+            this.lblRua.Location = new System.Drawing.Point(27, 353);
+            this.lblRua.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRua.Name = "lblRua";
-            this.lblRua.Size = new System.Drawing.Size(39, 20);
+            this.lblRua.Size = new System.Drawing.Size(47, 25);
             this.lblRua.TabIndex = 72;
             this.lblRua.Text = "Rua";
             // 
@@ -287,9 +303,10 @@
             // 
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(365, 339);
+            this.lblEstado.Location = new System.Drawing.Point(487, 417);
+            this.lblEstado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(26, 20);
+            this.lblEstado.Size = new System.Drawing.Size(31, 25);
             this.lblEstado.TabIndex = 73;
             this.lblEstado.Text = "Uf";
             // 
@@ -297,61 +314,68 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(177, 274);
+            this.label2.Location = new System.Drawing.Point(236, 337);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 25);
+            this.label2.Size = new System.Drawing.Size(138, 31);
             this.label2.TabIndex = 56;
             this.label2.Text = "Endereço";
             // 
             // txtSeguradoraEmail
             // 
             this.txtSeguradoraEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSeguradoraEmail.Location = new System.Drawing.Point(210, 141);
+            this.txtSeguradoraEmail.Location = new System.Drawing.Point(280, 174);
+            this.txtSeguradoraEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSeguradoraEmail.Name = "txtSeguradoraEmail";
-            this.txtSeguradoraEmail.Size = new System.Drawing.Size(231, 31);
+            this.txtSeguradoraEmail.Size = new System.Drawing.Size(307, 37);
             this.txtSeguradoraEmail.TabIndex = 48;
             // 
             // txtIdSeguradora
             // 
             this.txtIdSeguradora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdSeguradora.Location = new System.Drawing.Point(31, 72);
+            this.txtIdSeguradora.Location = new System.Drawing.Point(41, 89);
+            this.txtIdSeguradora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIdSeguradora.Name = "txtIdSeguradora";
-            this.txtIdSeguradora.Size = new System.Drawing.Size(75, 31);
+            this.txtIdSeguradora.Size = new System.Drawing.Size(99, 37);
             this.txtIdSeguradora.TabIndex = 45;
             // 
             // txtSeguradoraNome
             // 
             this.txtSeguradoraNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSeguradoraNome.Location = new System.Drawing.Point(33, 137);
+            this.txtSeguradoraNome.Location = new System.Drawing.Point(44, 169);
+            this.txtSeguradoraNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSeguradoraNome.Name = "txtSeguradoraNome";
-            this.txtSeguradoraNome.Size = new System.Drawing.Size(149, 31);
+            this.txtSeguradoraNome.Size = new System.Drawing.Size(197, 37);
             this.txtSeguradoraNome.TabIndex = 43;
             // 
             // mktClienteFone
             // 
             this.mktClienteFone.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mktClienteFone.Location = new System.Drawing.Point(210, 199);
+            this.mktClienteFone.Location = new System.Drawing.Point(280, 245);
+            this.mktClienteFone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mktClienteFone.Mask = "(00)90000-0000";
             this.mktClienteFone.Name = "mktClienteFone";
-            this.mktClienteFone.Size = new System.Drawing.Size(164, 31);
+            this.mktClienteFone.Size = new System.Drawing.Size(217, 37);
             this.mktClienteFone.TabIndex = 41;
             // 
             // mktSeguradoraCnpj
             // 
             this.mktSeguradoraCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mktSeguradoraCnpj.Location = new System.Drawing.Point(33, 199);
+            this.mktSeguradoraCnpj.Location = new System.Drawing.Point(44, 245);
+            this.mktSeguradoraCnpj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mktSeguradoraCnpj.Mask = "000000000-00";
             this.mktSeguradoraCnpj.Name = "mktSeguradoraCnpj";
-            this.mktSeguradoraCnpj.Size = new System.Drawing.Size(149, 31);
+            this.mktSeguradoraCnpj.Size = new System.Drawing.Size(197, 37);
             this.mktSeguradoraCnpj.TabIndex = 32;
             // 
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.Location = new System.Drawing.Point(213, 176);
+            this.lblTelefone.Location = new System.Drawing.Point(284, 217);
+            this.lblTelefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(71, 20);
+            this.lblTelefone.Size = new System.Drawing.Size(89, 25);
             this.lblTelefone.TabIndex = 34;
             this.lblTelefone.Text = "Telefone";
             // 
@@ -359,9 +383,10 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(214, 118);
+            this.lblEmail.Location = new System.Drawing.Point(285, 145);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(53, 20);
+            this.lblEmail.Size = new System.Drawing.Size(67, 25);
             this.lblEmail.TabIndex = 33;
             this.lblEmail.Text = "E-mail";
             // 
@@ -369,9 +394,10 @@
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(30, 53);
+            this.lblId.Location = new System.Drawing.Point(40, 65);
+            this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(26, 20);
+            this.lblId.Size = new System.Drawing.Size(31, 25);
             this.lblId.TabIndex = 0;
             this.lblId.Text = "ID";
             // 
@@ -379,9 +405,10 @@
             // 
             this.lblDadosFuncionario.AutoSize = true;
             this.lblDadosFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDadosFuncionario.Location = new System.Drawing.Point(77, 10);
+            this.lblDadosFuncionario.Location = new System.Drawing.Point(103, 12);
+            this.lblDadosFuncionario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDadosFuncionario.Name = "lblDadosFuncionario";
-            this.lblDadosFuncionario.Size = new System.Drawing.Size(332, 25);
+            this.lblDadosFuncionario.Size = new System.Drawing.Size(408, 31);
             this.lblDadosFuncionario.TabIndex = 1;
             this.lblDadosFuncionario.Text = "Insira os dados da seguradora";
             // 
@@ -389,9 +416,10 @@
             // 
             this.lblNomeFunc.AutoSize = true;
             this.lblNomeFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeFunc.Location = new System.Drawing.Point(29, 114);
+            this.lblNomeFunc.Location = new System.Drawing.Point(39, 140);
+            this.lblNomeFunc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNomeFunc.Name = "lblNomeFunc";
-            this.lblNomeFunc.Size = new System.Drawing.Size(112, 20);
+            this.lblNomeFunc.Size = new System.Drawing.Size(137, 25);
             this.lblNomeFunc.TabIndex = 27;
             this.lblNomeFunc.Text = "Nome fantasia";
             // 
@@ -399,9 +427,10 @@
             // 
             this.lblCnpj.AutoSize = true;
             this.lblCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCnpj.Location = new System.Drawing.Point(29, 176);
+            this.lblCnpj.Location = new System.Drawing.Point(39, 217);
+            this.lblCnpj.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCnpj.Name = "lblCnpj";
-            this.lblCnpj.Size = new System.Drawing.Size(49, 20);
+            this.lblCnpj.Size = new System.Drawing.Size(65, 25);
             this.lblCnpj.TabIndex = 30;
             this.lblCnpj.Text = "CNPJ";
             // 
@@ -411,9 +440,11 @@
             this.panelLogo.Controls.Add(this.btnSair);
             this.panelLogo.Controls.Add(this.lblSeguradoras);
             this.panelLogo.Controls.Add(this.lblTSB);
-            this.panelLogo.Location = new System.Drawing.Point(-1, 1);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(1370, 139);
+            this.panelLogo.Size = new System.Drawing.Size(1827, 171);
             this.panelLogo.TabIndex = 30;
             // 
             // btnSair
@@ -422,10 +453,10 @@
             this.btnSair.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSair.Location = new System.Drawing.Point(1263, 18);
+            this.btnSair.Location = new System.Drawing.Point(1684, 22);
             this.btnSair.Margin = new System.Windows.Forms.Padding(0);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(99, 38);
+            this.btnSair.Size = new System.Drawing.Size(132, 47);
             this.btnSair.TabIndex = 3;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
@@ -436,9 +467,10 @@
             this.lblSeguradoras.AutoSize = true;
             this.lblSeguradoras.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSeguradoras.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSeguradoras.Location = new System.Drawing.Point(476, 18);
+            this.lblSeguradoras.Location = new System.Drawing.Point(635, 22);
+            this.lblSeguradoras.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSeguradoras.Name = "lblSeguradoras";
-            this.lblSeguradoras.Size = new System.Drawing.Size(554, 108);
+            this.lblSeguradoras.Size = new System.Drawing.Size(696, 135);
             this.lblSeguradoras.TabIndex = 2;
             this.lblSeguradoras.Text = "Seguradora";
             // 
@@ -447,18 +479,20 @@
             this.lblTSB.AutoSize = true;
             this.lblTSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTSB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblTSB.Location = new System.Drawing.Point(13, 18);
+            this.lblTSB.Location = new System.Drawing.Point(17, 22);
+            this.lblTSB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTSB.Name = "lblTSB";
-            this.lblTSB.Size = new System.Drawing.Size(235, 108);
+            this.lblTSB.Size = new System.Drawing.Size(293, 135);
             this.lblTSB.TabIndex = 1;
             this.lblTSB.Text = "TSB";
             // 
             // btnBuscarSeguradora
             // 
             this.btnBuscarSeguradora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarSeguradora.Location = new System.Drawing.Point(-1, 137);
+            this.btnBuscarSeguradora.Location = new System.Drawing.Point(-1, 169);
+            this.btnBuscarSeguradora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscarSeguradora.Name = "btnBuscarSeguradora";
-            this.btnBuscarSeguradora.Size = new System.Drawing.Size(222, 61);
+            this.btnBuscarSeguradora.Size = new System.Drawing.Size(296, 75);
             this.btnBuscarSeguradora.TabIndex = 4;
             this.btnBuscarSeguradora.Text = "Buscar Seguradora";
             this.btnBuscarSeguradora.UseVisualStyleBackColor = true;
@@ -467,9 +501,10 @@
             // btnCadSeguradora
             // 
             this.btnCadSeguradora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadSeguradora.Location = new System.Drawing.Point(-1, 68);
+            this.btnCadSeguradora.Location = new System.Drawing.Point(-1, 84);
+            this.btnCadSeguradora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCadSeguradora.Name = "btnCadSeguradora";
-            this.btnCadSeguradora.Size = new System.Drawing.Size(222, 61);
+            this.btnCadSeguradora.Size = new System.Drawing.Size(296, 75);
             this.btnCadSeguradora.TabIndex = 5;
             this.btnCadSeguradora.Text = "Cadastrar Seguradora";
             this.btnCadSeguradora.UseVisualStyleBackColor = true;
@@ -477,9 +512,10 @@
             // btnVoltarMenu
             // 
             this.btnVoltarMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltarMenu.Location = new System.Drawing.Point(-1, 400);
+            this.btnVoltarMenu.Location = new System.Drawing.Point(-1, 492);
+            this.btnVoltarMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVoltarMenu.Name = "btnVoltarMenu";
-            this.btnVoltarMenu.Size = new System.Drawing.Size(222, 61);
+            this.btnVoltarMenu.Size = new System.Drawing.Size(296, 75);
             this.btnVoltarMenu.TabIndex = 7;
             this.btnVoltarMenu.Text = "Voltar ao Menu";
             this.btnVoltarMenu.UseVisualStyleBackColor = true;
@@ -494,32 +530,36 @@
             this.panel1.Controls.Add(this.btnCadSeguradora);
             this.panel1.Controls.Add(this.btnBuscarSeguradora);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Location = new System.Drawing.Point(-1, 141);
+            this.panel1.Location = new System.Drawing.Point(-1, 174);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(222, 607);
+            this.panel1.Size = new System.Drawing.Size(295, 747);
             this.panel1.TabIndex = 32;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(61, 25);
+            this.label7.Location = new System.Drawing.Point(81, 31);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 29);
+            this.label7.Size = new System.Drawing.Size(123, 36);
             this.label7.TabIndex = 10;
             this.label7.Text = "Opções";
             // 
             // Assistencia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1827, 922);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelFuncionario);
             this.Controls.Add(this.panelLogo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Assistencia";
             this.Text = "Assistencia";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Assistencia_Load);
             this.panelFuncionario.ResumeLayout(false);
             this.panelFuncionario.PerformLayout();
             this.panelLogo.ResumeLayout(false);

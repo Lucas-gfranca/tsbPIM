@@ -42,6 +42,8 @@
             this.cidadeSeguradoraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ufSeguradoraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.complementoSeguradoraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.seguradoraBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.pIM4DataSet8 = new tsbPIM.PIM4DataSet8();
             this.seguradoraBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pIM4DataSet4 = new tsbPIM.PIM4DataSet4();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -83,18 +85,16 @@
             this.pIM4DataSet7 = new tsbPIM.PIM4DataSet7();
             this.seguradoraBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.seguradoraTableAdapter1 = new tsbPIM.PIM4DataSet7TableAdapters.seguradoraTableAdapter();
-            this.pIM4DataSet8 = new tsbPIM.PIM4DataSet8();
-            this.seguradoraBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.seguradoraTableAdapter2 = new tsbPIM.PIM4DataSet8TableAdapters.seguradoraTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seguradoraBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seguradoraBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet4)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seguradoraBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.seguradoraBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvFuncionario
@@ -116,7 +116,7 @@
             this.complementoSeguradoraDataGridViewTextBoxColumn});
             this.dgvFuncionario.DataSource = this.seguradoraBindingSource2;
             this.dgvFuncionario.Location = new System.Drawing.Point(456, 555);
-            this.dgvFuncionario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvFuncionario.Margin = new System.Windows.Forms.Padding(4);
             this.dgvFuncionario.Name = "dgvFuncionario";
             this.dgvFuncionario.RowHeadersWidth = 51;
             this.dgvFuncionario.Size = new System.Drawing.Size(1331, 352);
@@ -220,6 +220,16 @@
             this.complementoSeguradoraDataGridViewTextBoxColumn.Name = "complementoSeguradoraDataGridViewTextBoxColumn";
             this.complementoSeguradoraDataGridViewTextBoxColumn.Width = 125;
             // 
+            // seguradoraBindingSource2
+            // 
+            this.seguradoraBindingSource2.DataMember = "seguradora";
+            this.seguradoraBindingSource2.DataSource = this.pIM4DataSet8;
+            // 
+            // pIM4DataSet8
+            // 
+            this.pIM4DataSet8.DataSetName = "PIM4DataSet8";
+            this.pIM4DataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // seguradoraBindingSource
             // 
             this.seguradoraBindingSource.DataMember = "seguradora";
@@ -234,7 +244,7 @@
             // 
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.Location = new System.Drawing.Point(1619, 204);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(192, 62);
             this.btnExcluir.TabIndex = 133;
@@ -246,7 +256,7 @@
             // 
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Location = new System.Drawing.Point(1417, 204);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(192, 62);
             this.btnEditar.TabIndex = 132;
@@ -264,7 +274,7 @@
             this.panel1.Controls.Add(this.btnBuscarCliente);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(0, 170);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(295, 752);
             this.panel1.TabIndex = 131;
@@ -284,7 +294,7 @@
             // 
             this.btnEditarFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditarFuncionario.Location = new System.Drawing.Point(-1, 84);
-            this.btnEditarFuncionario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditarFuncionario.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditarFuncionario.Name = "btnEditarFuncionario";
             this.btnEditarFuncionario.Size = new System.Drawing.Size(296, 75);
             this.btnEditarFuncionario.TabIndex = 8;
@@ -296,7 +306,7 @@
             // 
             this.btnVoltarMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltarMenu.Location = new System.Drawing.Point(-1, 373);
-            this.btnVoltarMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVoltarMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltarMenu.Name = "btnVoltarMenu";
             this.btnVoltarMenu.Size = new System.Drawing.Size(296, 75);
             this.btnVoltarMenu.TabIndex = 7;
@@ -308,12 +318,13 @@
             // 
             this.btnBuscarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarCliente.Location = new System.Drawing.Point(-1, 158);
-            this.btnBuscarCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarCliente.Name = "btnBuscarCliente";
             this.btnBuscarCliente.Size = new System.Drawing.Size(296, 75);
             this.btnBuscarCliente.TabIndex = 4;
             this.btnBuscarCliente.Text = "Buscar Seguradora";
             this.btnBuscarCliente.UseVisualStyleBackColor = true;
+            this.btnBuscarCliente.Click += new System.EventHandler(this.btnBuscarCliente_Click);
             // 
             // panelLogo
             // 
@@ -321,8 +332,9 @@
             this.panelLogo.Controls.Add(this.btnSair);
             this.panelLogo.Controls.Add(this.lblMenu);
             this.panelLogo.Controls.Add(this.lblTSB);
-            this.panelLogo.Location = new System.Drawing.Point(0, -1);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(1827, 171);
             this.panelLogo.TabIndex = 130;
@@ -370,7 +382,7 @@
             // 
             this.txtBuscaSegEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaSegEmail.Location = new System.Drawing.Point(456, 388);
-            this.txtBuscaSegEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaSegEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaSegEmail.Name = "txtBuscaSegEmail";
             this.txtBuscaSegEmail.Size = new System.Drawing.Size(241, 37);
             this.txtBuscaSegEmail.TabIndex = 135;
@@ -379,7 +391,7 @@
             // 
             this.txtBuscaSegFone.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaSegFone.Location = new System.Drawing.Point(456, 471);
-            this.txtBuscaSegFone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaSegFone.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaSegFone.Name = "txtBuscaSegFone";
             this.txtBuscaSegFone.Size = new System.Drawing.Size(176, 37);
             this.txtBuscaSegFone.TabIndex = 136;
@@ -388,7 +400,7 @@
             // 
             this.txtBuscaSegRua.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaSegRua.Location = new System.Drawing.Point(691, 471);
-            this.txtBuscaSegRua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaSegRua.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaSegRua.Name = "txtBuscaSegRua";
             this.txtBuscaSegRua.Size = new System.Drawing.Size(281, 37);
             this.txtBuscaSegRua.TabIndex = 137;
@@ -466,7 +478,7 @@
             // 
             this.txtBuscaSegId.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaSegId.Location = new System.Drawing.Point(456, 228);
-            this.txtBuscaSegId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaSegId.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaSegId.Name = "txtBuscaSegId";
             this.txtBuscaSegId.ReadOnly = true;
             this.txtBuscaSegId.Size = new System.Drawing.Size(77, 37);
@@ -520,7 +532,7 @@
             // 
             this.txtBuscaSegNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaSegNome.Location = new System.Drawing.Point(456, 305);
-            this.txtBuscaSegNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaSegNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaSegNome.Name = "txtBuscaSegNome";
             this.txtBuscaSegNome.Size = new System.Drawing.Size(241, 37);
             this.txtBuscaSegNome.TabIndex = 134;
@@ -558,7 +570,7 @@
             "SE",
             "TO"});
             this.cbBuscaUfSeguradora.Location = new System.Drawing.Point(1284, 305);
-            this.cbBuscaUfSeguradora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbBuscaUfSeguradora.Margin = new System.Windows.Forms.Padding(4);
             this.cbBuscaUfSeguradora.Name = "cbBuscaUfSeguradora";
             this.cbBuscaUfSeguradora.Size = new System.Drawing.Size(101, 38);
             this.cbBuscaUfSeguradora.TabIndex = 157;
@@ -584,7 +596,7 @@
             "Médico",
             "Financeiro"});
             this.cbBuscaTipoServico.Location = new System.Drawing.Point(753, 388);
-            this.cbBuscaTipoServico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbBuscaTipoServico.Margin = new System.Windows.Forms.Padding(4);
             this.cbBuscaTipoServico.Name = "cbBuscaTipoServico";
             this.cbBuscaTipoServico.Size = new System.Drawing.Size(197, 38);
             this.cbBuscaTipoServico.TabIndex = 159;
@@ -604,7 +616,7 @@
             // 
             this.txtBuscaSegBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaSegBairro.Location = new System.Drawing.Point(1016, 305);
-            this.txtBuscaSegBairro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaSegBairro.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaSegBairro.Name = "txtBuscaSegBairro";
             this.txtBuscaSegBairro.Size = new System.Drawing.Size(193, 37);
             this.txtBuscaSegBairro.TabIndex = 161;
@@ -613,7 +625,7 @@
             // 
             this.txtBuscaSegCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaSegCidade.Location = new System.Drawing.Point(1016, 390);
-            this.txtBuscaSegCidade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaSegCidade.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaSegCidade.Name = "txtBuscaSegCidade";
             this.txtBuscaSegCidade.Size = new System.Drawing.Size(189, 37);
             this.txtBuscaSegCidade.TabIndex = 162;
@@ -622,7 +634,7 @@
             // 
             this.txtBuscaSegNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaSegNum.Location = new System.Drawing.Point(1016, 471);
-            this.txtBuscaSegNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaSegNum.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaSegNum.Name = "txtBuscaSegNum";
             this.txtBuscaSegNum.Size = new System.Drawing.Size(100, 37);
             this.txtBuscaSegNum.TabIndex = 163;
@@ -631,7 +643,7 @@
             // 
             this.txtBuscaSegComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscaSegComp.Location = new System.Drawing.Point(1176, 471);
-            this.txtBuscaSegComp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBuscaSegComp.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscaSegComp.Name = "txtBuscaSegComp";
             this.txtBuscaSegComp.Size = new System.Drawing.Size(252, 37);
             this.txtBuscaSegComp.TabIndex = 164;
@@ -640,7 +652,7 @@
             // 
             this.mktBuscaSegCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mktBuscaSegCnpj.Location = new System.Drawing.Point(749, 305);
-            this.mktBuscaSegCnpj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mktBuscaSegCnpj.Margin = new System.Windows.Forms.Padding(4);
             this.mktBuscaSegCnpj.Name = "mktBuscaSegCnpj";
             this.mktBuscaSegCnpj.ReadOnly = true;
             this.mktBuscaSegCnpj.Size = new System.Drawing.Size(201, 37);
@@ -663,16 +675,6 @@
             // seguradoraTableAdapter1
             // 
             this.seguradoraTableAdapter1.ClearBeforeFill = true;
-            // 
-            // pIM4DataSet8
-            // 
-            this.pIM4DataSet8.DataSetName = "PIM4DataSet8";
-            this.pIM4DataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // seguradoraBindingSource2
-            // 
-            this.seguradoraBindingSource2.DataMember = "seguradora";
-            this.seguradoraBindingSource2.DataSource = this.pIM4DataSet8;
             // 
             // seguradoraTableAdapter2
             // 
@@ -712,12 +714,14 @@
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelLogo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaBuscaSeguradora";
             this.Text = "TelaBuscaSeguradora";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TelaBuscaSeguradora_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seguradoraBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seguradoraBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet4)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -726,8 +730,6 @@
             this.panelLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seguradoraBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.seguradoraBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

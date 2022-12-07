@@ -16,27 +16,28 @@ namespace tsbPIM.Modelo
         {
             LoginDaoComandos loginDao = new LoginDaoComandos();
             tem = loginDao.verificarLogin(email, senha);
-            if(!loginDao.mensagem.Equals(" "));
+            if (!loginDao.mensagem.Equals(" "));
             {
-                this.mensagem = loginDao.mensagem; 
+                this.mensagem = loginDao.mensagem;
             }
             return tem;
         }
 
-        
-       
 
-        
+
+
+
+
         //{
-            
 
-           // LoginDaoComandos loginDao = new LoginDaoComandos();
-           // mensagem = loginDao.cadFunc(idFunc, nomeFunc, cargo, sexoFunc, estCiv, cpfFunc, rgFunc, dataNascFunc, cepFunc, email, foneFunc);
-           // if (!loginDao.mensagem.Equals(" ")) ;
-            //{
-               // this.mensagem = loginDao.mensagem;
-           // }
-            //return mensagem;
+
+        // LoginDaoComandos loginDao = new LoginDaoComandos();
+        // mensagem = loginDao.cadFunc(idFunc, nomeFunc, cargo, sexoFunc, estCiv, cpfFunc, rgFunc, dataNascFunc, cepFunc, email, foneFunc);
+        // if (!loginDao.mensagem.Equals(" ")) ;
+        //{
+        // this.mensagem = loginDao.mensagem;
+        // }
+        //return mensagem;
         //}
     }
 }

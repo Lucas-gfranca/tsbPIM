@@ -52,6 +52,12 @@
     <Compile Include="Apresentação\Assistencia.Designer.cs">
       <DependentUpon>Assistencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apresentação\TelaBuscaVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\TelaBuscaVenda.Designer.cs">
+      <DependentUpon>TelaBuscaVenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apresentação\CadastrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PIM4DataSet10.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PIM4DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PIM4DataSet11.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PIM4DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -199,6 +210,9 @@
     <EmbeddedResource Include="Apresentação\TelaBuscaSeguradora.resx">
       <DependentUpon>TelaBuscaSeguradora.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\TelaBuscaVenda.resx">
+      <DependentUpon>TelaBuscaVenda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Apresentação\Vendas.resx">
       <DependentUpon>Vendas.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +257,17 @@
     </None>
     <None Include="PIM4DataSet10.xss">
       <DependentUpon>PIM4DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet11.xsc">
+      <DependentUpon>PIM4DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="PIM4DataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PIM4DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PIM4DataSet11.xss">
+      <DependentUpon>PIM4DataSet11.xsd</DependentUpon>
     </None>
     <None Include="PIM4DataSet2.xsc">
       <DependentUpon>PIM4DataSet2.xsd</DependentUpon>

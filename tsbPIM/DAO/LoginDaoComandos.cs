@@ -48,7 +48,7 @@ namespace tsbPIM.DAL
             return temAdm;
         }
 
-        public void inserirVenda(int vendasId, String plano, DateTime dataVenda, String idCliente_vendas, String idSeguradora_vendas, String funcId_vendas)
+        public void inserirVenda(string plano, DateTime dataVenda, int idCliente_vendas, int funcId_vendas, int idSeguradora_vendas)
         {
 
             try
@@ -57,13 +57,11 @@ namespace tsbPIM.DAL
                 //comandos sql para ver se tem no banco de dados
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.CommandText = "insertVendas";
-                cmd.Parameters.AddWithValue("@vendasId", vendasId);
                 cmd.Parameters.AddWithValue("@plano", plano);
-                cmd.Parameters.AddWithValue("@dataVenda", dataVenda);
-                cmd.Parameters.AddWithValue("@@idCliente_vendas", idCliente_vendas);
-                cmd.Parameters.AddWithValue("@idSeguradora_vendas", idSeguradora_vendas);
+                cmd.Parameters.AddWithValue("@dataVenda", dataVenda);     
+                cmd.Parameters.AddWithValue("@idCliente_vendas", idCliente_vendas);
                 cmd.Parameters.AddWithValue("@funcId_vendas", funcId_vendas);
-
+                cmd.Parameters.AddWithValue("@idSeguradora_vendas", idSeguradora_vendas);
                 cmd.ExecuteReader();
                 MessageBox.Show("Venda realizada com Sucesso !!!");
             }

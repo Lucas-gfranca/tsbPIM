@@ -72,11 +72,6 @@
             this.cadFuncBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.cadFuncTableAdapter2 = new tsbPIM.PIM4DataSet5TableAdapters.CadFuncTableAdapter();
             this.dgvFuncionario = new System.Windows.Forms.DataGridView();
-            this.cadFuncBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.pIM4DataSet6 = new tsbPIM.PIM4DataSet6();
-            this.cadFuncTableAdapter3 = new tsbPIM.PIM4DataSet6TableAdapters.CadFuncTableAdapter();
-            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
-            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.funcIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.funcNomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.funcEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,6 +83,11 @@
             this.funcSexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.funcRg = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.funcCep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cadFuncBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.pIM4DataSet6 = new tsbPIM.PIM4DataSet6();
+            this.cadFuncTableAdapter3 = new tsbPIM.PIM4DataSet6TableAdapters.CadFuncTableAdapter();
+            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
+            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.panel1.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pIM4DataSet2)).BeginInit();
@@ -422,10 +422,11 @@
             this.panelLogo.Controls.Add(this.btnSair);
             this.panelLogo.Controls.Add(this.lblMenu);
             this.panelLogo.Controls.Add(this.lblTSB);
-            this.panelLogo.Location = new System.Drawing.Point(0, -1);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(1827, 171);
+            this.panelLogo.Size = new System.Drawing.Size(1847, 171);
             this.panelLogo.TabIndex = 84;
             this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
             // 
@@ -570,39 +571,6 @@
             this.dgvFuncionario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFuncionario_CellContentClick);
             this.dgvFuncionario.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFuncionario_CellDoubleClick);
             // 
-            // cadFuncBindingSource3
-            // 
-            this.cadFuncBindingSource3.DataMember = "CadFunc";
-            this.cadFuncBindingSource3.DataSource = this.pIM4DataSet6;
-            // 
-            // pIM4DataSet6
-            // 
-            this.pIM4DataSet6.DataSetName = "PIM4DataSet6";
-            this.pIM4DataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cadFuncTableAdapter3
-            // 
-            this.cadFuncTableAdapter3.ClearBeforeFill = true;
-            // 
-            // fillByToolStrip
-            // 
-            this.fillByToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fillByToolStripButton});
-            this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(1847, 27);
-            this.fillByToolStrip.TabIndex = 131;
-            this.fillByToolStrip.Text = "fillByToolStrip";
-            // 
-            // fillByToolStripButton
-            // 
-            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillByToolStripButton.Name = "fillByToolStripButton";
-            this.fillByToolStripButton.Size = new System.Drawing.Size(48, 24);
-            this.fillByToolStripButton.Text = "FillBy";
-            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
-            // 
             // funcIdDataGridViewTextBoxColumn
             // 
             this.funcIdDataGridViewTextBoxColumn.DataPropertyName = "funcId";
@@ -690,6 +658,39 @@
             this.funcCep.MinimumWidth = 6;
             this.funcCep.Name = "funcCep";
             this.funcCep.Width = 125;
+            // 
+            // cadFuncBindingSource3
+            // 
+            this.cadFuncBindingSource3.DataMember = "CadFunc";
+            this.cadFuncBindingSource3.DataSource = this.pIM4DataSet6;
+            // 
+            // pIM4DataSet6
+            // 
+            this.pIM4DataSet6.DataSetName = "PIM4DataSet6";
+            this.pIM4DataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cadFuncTableAdapter3
+            // 
+            this.cadFuncTableAdapter3.ClearBeforeFill = true;
+            // 
+            // fillByToolStrip
+            // 
+            this.fillByToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fillByToolStripButton});
+            this.fillByToolStrip.Location = new System.Drawing.Point(0, 171);
+            this.fillByToolStrip.Name = "fillByToolStrip";
+            this.fillByToolStrip.Size = new System.Drawing.Size(1847, 31);
+            this.fillByToolStrip.TabIndex = 131;
+            this.fillByToolStrip.Text = "fillByToolStrip";
+            // 
+            // fillByToolStripButton
+            // 
+            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillByToolStripButton.Name = "fillByToolStripButton";
+            this.fillByToolStripButton.Size = new System.Drawing.Size(48, 28);
+            this.fillByToolStripButton.Text = "FillBy";
+            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
             // 
             // TelaBuscaFunc
             // 

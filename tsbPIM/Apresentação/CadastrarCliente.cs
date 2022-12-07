@@ -54,6 +54,11 @@ namespace tsbPIM.Apresentação
 
         private void btnCadastrarCliente_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrEmpty(txtIdCliente.Text) || String.IsNullOrEmpty(txtClienteNome.Text) || String.IsNullOrEmpty(mktClienteFone.Text) || String.IsNullOrEmpty(mktClienteCpf.Text) || String.IsNullOrEmpty(mktClienteRg.Text) || String.IsNullOrEmpty(txtClienteEmail.Text) || String.IsNullOrEmpty(mktClienteDataNasc.Text) || String.IsNullOrEmpty(txtAltura.Text) || String.IsNullOrEmpty(txtPeso.Text))
+            {
+                MessageBox.Show("Campos obrigatórios não preenchidos, verifique e tente novamente!!!");
+                return;
+            }
             LoginDaoComandos ldco = new LoginDaoComandos();
             ldco.cadCliente(int.Parse(txtIdCliente.Text), ckbClientePj.Checked,  txtClienteNome.Text, mktClienteFone.Text, mktClienteCpf.Text, mktClienteRg.Text, txtClienteEmail.Text, Convert.ToDateTime(mktClienteDataNasc.Text), cbClienteSexo.Text, cbClienteEstCiv.Text, float.Parse(txtAltura.Text), float.Parse(txtPeso.Text), cbkFumante.Checked, cbkCirurgia.Checked, cbkDoenca.Checked, txtRua.Text, int.Parse(txtNumero.Text), txtBairro.Text, txtCidade.Text, cbUf.Text, txtComplemento.Text);
             ldco.dependentes(txtNomeDependente.Text, cbDependenteSexo.Text, mkdDependenteCpf.Text, txtDependenteEmail.Text);

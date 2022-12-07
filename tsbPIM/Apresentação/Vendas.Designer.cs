@@ -33,6 +33,7 @@
             this.lblMenu = new System.Windows.Forms.Label();
             this.lblTSB = new System.Windows.Forms.Label();
             this.panelFuncionario = new System.Windows.Forms.Panel();
+            this.cbDropServicos = new System.Windows.Forms.ComboBox();
             this.cbDropCLientes = new System.Windows.Forms.ComboBox();
             this.cbFomaPagamento = new System.Windows.Forms.ComboBox();
             this.lblFormaPagamento = new System.Windows.Forms.Label();
@@ -54,7 +55,6 @@
             this.btnVoltarMenu = new System.Windows.Forms.Button();
             this.btnCadSeguradora = new System.Windows.Forms.Button();
             this.btnBuscarSeguradora = new System.Windows.Forms.Button();
-            this.cbDropServicos = new System.Windows.Forms.ComboBox();
             this.panelLogo.SuspendLayout();
             this.panelFuncionario.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -66,9 +66,11 @@
             this.panelLogo.Controls.Add(this.btnSair);
             this.panelLogo.Controls.Add(this.lblMenu);
             this.panelLogo.Controls.Add(this.lblTSB);
-            this.panelLogo.Location = new System.Drawing.Point(1, 1);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(1370, 139);
+            this.panelLogo.Size = new System.Drawing.Size(1827, 171);
             this.panelLogo.TabIndex = 131;
             // 
             // btnSair
@@ -77,10 +79,10 @@
             this.btnSair.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSair.Location = new System.Drawing.Point(1249, 28);
+            this.btnSair.Location = new System.Drawing.Point(1665, 34);
             this.btnSair.Margin = new System.Windows.Forms.Padding(0);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(99, 38);
+            this.btnSair.Size = new System.Drawing.Size(132, 47);
             this.btnSair.TabIndex = 3;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
@@ -91,9 +93,10 @@
             this.lblMenu.AutoSize = true;
             this.lblMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenu.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblMenu.Location = new System.Drawing.Point(594, 18);
+            this.lblMenu.Location = new System.Drawing.Point(792, 22);
+            this.lblMenu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMenu.Name = "lblMenu";
-            this.lblMenu.Size = new System.Drawing.Size(375, 108);
+            this.lblMenu.Size = new System.Drawing.Size(471, 135);
             this.lblMenu.TabIndex = 2;
             this.lblMenu.Text = "Vendas";
             // 
@@ -102,9 +105,10 @@
             this.lblTSB.AutoSize = true;
             this.lblTSB.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTSB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblTSB.Location = new System.Drawing.Point(3, 18);
+            this.lblTSB.Location = new System.Drawing.Point(4, 22);
+            this.lblTSB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTSB.Name = "lblTSB";
-            this.lblTSB.Size = new System.Drawing.Size(235, 108);
+            this.lblTSB.Size = new System.Drawing.Size(293, 135);
             this.lblTSB.TabIndex = 1;
             this.lblTSB.Text = "TSB";
             // 
@@ -129,18 +133,30 @@
             this.panelFuncionario.Controls.Add(this.lblCargo);
             this.panelFuncionario.Controls.Add(this.lblSexo);
             this.panelFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelFuncionario.Location = new System.Drawing.Point(539, 141);
+            this.panelFuncionario.Location = new System.Drawing.Point(719, 174);
+            this.panelFuncionario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelFuncionario.Name = "panelFuncionario";
-            this.panelFuncionario.Size = new System.Drawing.Size(505, 607);
+            this.panelFuncionario.Size = new System.Drawing.Size(673, 747);
             this.panelFuncionario.TabIndex = 132;
+            // 
+            // cbDropServicos
+            // 
+            this.cbDropServicos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDropServicos.FormattingEnabled = true;
+            this.cbDropServicos.Location = new System.Drawing.Point(393, 218);
+            this.cbDropServicos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbDropServicos.Name = "cbDropServicos";
+            this.cbDropServicos.Size = new System.Drawing.Size(252, 38);
+            this.cbDropServicos.TabIndex = 52;
             // 
             // cbDropCLientes
             // 
             this.cbDropCLientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDropCLientes.FormattingEnabled = true;
-            this.cbDropCLientes.Location = new System.Drawing.Point(39, 177);
+            this.cbDropCLientes.Location = new System.Drawing.Point(52, 218);
+            this.cbDropCLientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbDropCLientes.Name = "cbDropCLientes";
-            this.cbDropCLientes.Size = new System.Drawing.Size(190, 33);
+            this.cbDropCLientes.Size = new System.Drawing.Size(252, 38);
             this.cbDropCLientes.TabIndex = 51;
             // 
             // cbFomaPagamento
@@ -152,18 +168,20 @@
             "Crédito",
             "Boleto",
             "Pix"});
-            this.cbFomaPagamento.Location = new System.Drawing.Point(40, 317);
+            this.cbFomaPagamento.Location = new System.Drawing.Point(53, 390);
+            this.cbFomaPagamento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbFomaPagamento.Name = "cbFomaPagamento";
-            this.cbFomaPagamento.Size = new System.Drawing.Size(174, 33);
+            this.cbFomaPagamento.Size = new System.Drawing.Size(231, 38);
             this.cbFomaPagamento.TabIndex = 49;
             // 
             // lblFormaPagamento
             // 
             this.lblFormaPagamento.AutoSize = true;
             this.lblFormaPagamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFormaPagamento.Location = new System.Drawing.Point(36, 294);
+            this.lblFormaPagamento.Location = new System.Drawing.Point(48, 362);
+            this.lblFormaPagamento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFormaPagamento.Name = "lblFormaPagamento";
-            this.lblFormaPagamento.Size = new System.Drawing.Size(171, 20);
+            this.lblFormaPagamento.Size = new System.Drawing.Size(210, 25);
             this.lblFormaPagamento.TabIndex = 50;
             this.lblFormaPagamento.Text = "Formas de Pagamento";
             // 
@@ -171,18 +189,20 @@
             // 
             this.cbDropFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDropFuncionario.FormattingEnabled = true;
-            this.cbDropFuncionario.Location = new System.Drawing.Point(39, 252);
+            this.cbDropFuncionario.Location = new System.Drawing.Point(52, 310);
+            this.cbDropFuncionario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbDropFuncionario.Name = "cbDropFuncionario";
-            this.cbDropFuncionario.Size = new System.Drawing.Size(168, 33);
+            this.cbDropFuncionario.Size = new System.Drawing.Size(223, 38);
             this.cbDropFuncionario.TabIndex = 48;
             // 
             // bntCancelar
             // 
             this.bntCancelar.BackColor = System.Drawing.Color.Red;
             this.bntCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bntCancelar.Location = new System.Drawing.Point(276, 499);
+            this.bntCancelar.Location = new System.Drawing.Point(368, 614);
+            this.bntCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bntCancelar.Name = "bntCancelar";
-            this.bntCancelar.Size = new System.Drawing.Size(149, 65);
+            this.bntCancelar.Size = new System.Drawing.Size(199, 80);
             this.bntCancelar.TabIndex = 47;
             this.bntCancelar.Text = "Cancelar";
             this.bntCancelar.UseVisualStyleBackColor = false;
@@ -191,9 +211,10 @@
             // 
             this.btnCadastrar.BackColor = System.Drawing.Color.LimeGreen;
             this.btnCadastrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCadastrar.Location = new System.Drawing.Point(58, 499);
+            this.btnCadastrar.Location = new System.Drawing.Point(77, 614);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(149, 65);
+            this.btnCadastrar.Size = new System.Drawing.Size(199, 80);
             this.btnCadastrar.TabIndex = 46;
             this.btnCadastrar.Text = "Finalizar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
@@ -202,9 +223,10 @@
             // txtVendaId
             // 
             this.txtVendaId.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVendaId.Location = new System.Drawing.Point(40, 106);
+            this.txtVendaId.Location = new System.Drawing.Point(53, 130);
+            this.txtVendaId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtVendaId.Name = "txtVendaId";
-            this.txtVendaId.Size = new System.Drawing.Size(61, 31);
+            this.txtVendaId.Size = new System.Drawing.Size(80, 37);
             this.txtVendaId.TabIndex = 45;
             // 
             // cbPlanos
@@ -215,18 +237,20 @@
             "Básico",
             "Seguro+",
             "Seguro Masters Premmium"});
-            this.cbPlanos.Location = new System.Drawing.Point(295, 249);
+            this.cbPlanos.Location = new System.Drawing.Point(393, 306);
+            this.cbPlanos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbPlanos.Name = "cbPlanos";
-            this.cbPlanos.Size = new System.Drawing.Size(190, 33);
+            this.cbPlanos.Size = new System.Drawing.Size(252, 38);
             this.cbPlanos.TabIndex = 27;
             // 
             // mktDataVenda
             // 
             this.mktDataVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mktDataVenda.Location = new System.Drawing.Point(296, 319);
+            this.mktDataVenda.Location = new System.Drawing.Point(395, 393);
+            this.mktDataVenda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mktDataVenda.Mask = "00/00/0000";
             this.mktDataVenda.Name = "mktDataVenda";
-            this.mktDataVenda.Size = new System.Drawing.Size(118, 31);
+            this.mktDataVenda.Size = new System.Drawing.Size(156, 37);
             this.mktDataVenda.TabIndex = 38;
             this.mktDataVenda.ValidatingType = typeof(System.DateTime);
             // 
@@ -234,9 +258,10 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(37, 229);
+            this.lblEmail.Location = new System.Drawing.Point(49, 282);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(92, 20);
+            this.lblEmail.Size = new System.Drawing.Size(114, 25);
             this.lblEmail.TabIndex = 33;
             this.lblEmail.Text = "Funcionário";
             // 
@@ -244,9 +269,10 @@
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(37, 87);
+            this.lblId.Location = new System.Drawing.Point(49, 107);
+            this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(26, 20);
+            this.lblId.Size = new System.Drawing.Size(31, 25);
             this.lblId.TabIndex = 0;
             this.lblId.Text = "ID";
             // 
@@ -254,9 +280,10 @@
             // 
             this.lblDadosVendas.AutoSize = true;
             this.lblDadosVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDadosVendas.Location = new System.Drawing.Point(108, 17);
+            this.lblDadosVendas.Location = new System.Drawing.Point(144, 21);
+            this.lblDadosVendas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDadosVendas.Name = "lblDadosVendas";
-            this.lblDadosVendas.Size = new System.Drawing.Size(277, 25);
+            this.lblDadosVendas.Size = new System.Drawing.Size(340, 31);
             this.lblDadosVendas.TabIndex = 1;
             this.lblDadosVendas.Text = "Insira os dados da venda";
             // 
@@ -264,9 +291,10 @@
             // 
             this.lblData.AutoSize = true;
             this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(294, 300);
+            this.lblData.Location = new System.Drawing.Point(392, 369);
+            this.lblData.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(44, 20);
+            this.lblData.Size = new System.Drawing.Size(53, 25);
             this.lblData.TabIndex = 32;
             this.lblData.Text = "Data";
             // 
@@ -274,9 +302,10 @@
             // 
             this.lblNomeFunc.AutoSize = true;
             this.lblNomeFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeFunc.Location = new System.Drawing.Point(37, 155);
+            this.lblNomeFunc.Location = new System.Drawing.Point(49, 191);
+            this.lblNomeFunc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNomeFunc.Name = "lblNomeFunc";
-            this.lblNomeFunc.Size = new System.Drawing.Size(58, 20);
+            this.lblNomeFunc.Size = new System.Drawing.Size(73, 25);
             this.lblNomeFunc.TabIndex = 27;
             this.lblNomeFunc.Text = "Cliente";
             // 
@@ -284,9 +313,10 @@
             // 
             this.lblCargo.AutoSize = true;
             this.lblCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCargo.Location = new System.Drawing.Point(292, 158);
+            this.lblCargo.Location = new System.Drawing.Point(389, 194);
+            this.lblCargo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCargo.Name = "lblCargo";
-            this.lblCargo.Size = new System.Drawing.Size(61, 20);
+            this.lblCargo.Size = new System.Drawing.Size(78, 25);
             this.lblCargo.TabIndex = 28;
             this.lblCargo.Text = "Serviço";
             // 
@@ -294,9 +324,10 @@
             // 
             this.lblSexo.AutoSize = true;
             this.lblSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSexo.Location = new System.Drawing.Point(291, 226);
+            this.lblSexo.Location = new System.Drawing.Point(388, 278);
+            this.lblSexo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSexo.Name = "lblSexo";
-            this.lblSexo.Size = new System.Drawing.Size(57, 20);
+            this.lblSexo.Size = new System.Drawing.Size(72, 25);
             this.lblSexo.TabIndex = 29;
             this.lblSexo.Text = "Planos";
             // 
@@ -309,27 +340,30 @@
             this.panel1.Controls.Add(this.btnCadSeguradora);
             this.panel1.Controls.Add(this.btnBuscarSeguradora);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Location = new System.Drawing.Point(1, 141);
+            this.panel1.Location = new System.Drawing.Point(1, 174);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(222, 607);
+            this.panel1.Size = new System.Drawing.Size(295, 747);
             this.panel1.TabIndex = 133;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(61, 25);
+            this.label7.Location = new System.Drawing.Point(81, 31);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 29);
+            this.label7.Size = new System.Drawing.Size(123, 36);
             this.label7.TabIndex = 10;
             this.label7.Text = "Opções";
             // 
             // btnVoltarMenu
             // 
             this.btnVoltarMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltarMenu.Location = new System.Drawing.Point(-1, 400);
+            this.btnVoltarMenu.Location = new System.Drawing.Point(-1, 492);
+            this.btnVoltarMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVoltarMenu.Name = "btnVoltarMenu";
-            this.btnVoltarMenu.Size = new System.Drawing.Size(222, 61);
+            this.btnVoltarMenu.Size = new System.Drawing.Size(296, 75);
             this.btnVoltarMenu.TabIndex = 7;
             this.btnVoltarMenu.Text = "Voltar ao Menu";
             this.btnVoltarMenu.UseVisualStyleBackColor = true;
@@ -338,9 +372,10 @@
             // btnCadSeguradora
             // 
             this.btnCadSeguradora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadSeguradora.Location = new System.Drawing.Point(-1, 68);
+            this.btnCadSeguradora.Location = new System.Drawing.Point(-1, 84);
+            this.btnCadSeguradora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCadSeguradora.Name = "btnCadSeguradora";
-            this.btnCadSeguradora.Size = new System.Drawing.Size(222, 61);
+            this.btnCadSeguradora.Size = new System.Drawing.Size(296, 75);
             this.btnCadSeguradora.TabIndex = 5;
             this.btnCadSeguradora.Text = "Cadastrar Venda";
             this.btnCadSeguradora.UseVisualStyleBackColor = true;
@@ -348,32 +383,27 @@
             // btnBuscarSeguradora
             // 
             this.btnBuscarSeguradora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarSeguradora.Location = new System.Drawing.Point(-1, 137);
+            this.btnBuscarSeguradora.Location = new System.Drawing.Point(-1, 169);
+            this.btnBuscarSeguradora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscarSeguradora.Name = "btnBuscarSeguradora";
-            this.btnBuscarSeguradora.Size = new System.Drawing.Size(222, 61);
+            this.btnBuscarSeguradora.Size = new System.Drawing.Size(296, 75);
             this.btnBuscarSeguradora.TabIndex = 4;
             this.btnBuscarSeguradora.Text = "Buscar Venda";
             this.btnBuscarSeguradora.UseVisualStyleBackColor = true;
-            // 
-            // cbDropServicos
-            // 
-            this.cbDropServicos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbDropServicos.FormattingEnabled = true;
-            this.cbDropServicos.Location = new System.Drawing.Point(295, 177);
-            this.cbDropServicos.Name = "cbDropServicos";
-            this.cbDropServicos.Size = new System.Drawing.Size(190, 33);
-            this.cbDropServicos.TabIndex = 52;
+            this.btnBuscarSeguradora.Click += new System.EventHandler(this.btnBuscarSeguradora_Click);
             // 
             // Vendas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1827, 922);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelFuncionario);
             this.Controls.Add(this.panelLogo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Vendas";
             this.Text = "Vendas";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
             this.panelFuncionario.ResumeLayout(false);

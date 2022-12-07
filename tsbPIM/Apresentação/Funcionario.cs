@@ -61,14 +61,9 @@ namespace tsbPIM.Apresentação
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(txtFuncId.Text))
+            if (String.IsNullOrEmpty(txtFuncId.Text) || String.IsNullOrEmpty(txtFuncNome.Text) || String.IsNullOrEmpty(txtCargo.Text) || String.IsNullOrEmpty(mktFuncDataNasc.Text) || String.IsNullOrEmpty(mktFuncFone.Text) || String.IsNullOrEmpty(cbFuncSexo.Text) || String.IsNullOrEmpty(mktFuncCpf.Text) || String.IsNullOrEmpty(cbFuncEstCiv.Text) || String.IsNullOrEmpty(mktFuncRg.Text) || String.IsNullOrEmpty(mktFuncCep.Text) || String.IsNullOrEmpty(txtFuncEmail.Text))
             {
-                MessageBox.Show("Preencha o campo Id");
-                return;
-            }
-            if (String.IsNullOrEmpty(txtFuncNome.Text))
-            {
-                MessageBox.Show("Preencha o campo Nome");
+                MessageBox.Show("Campos obrigatórios não preenchidos, verifique e tente novamente!!!");
                 return;
             }
 

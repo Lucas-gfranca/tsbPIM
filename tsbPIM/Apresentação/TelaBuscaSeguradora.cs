@@ -80,5 +80,10 @@ namespace tsbPIM.Apresentação
             this.Hide();
             login.Show();
         }
+
+        private void btnBuscarCliente_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
